@@ -6,7 +6,6 @@ Een live dashboard, een fabriekskaart en een productieplanner voor **Satisfactor
 
 1. **Satisfactory 1.2** op Windows.
 2. **De mod FicsIt Remote Monitoring**, te installeren via de [Satisfactory Mod Manager](https://smm.ficsit.app/). Zet in de modinstellingen **Web Autostart** aan, zodat de webserver met de game meestart. Je kunt hem ook zelf starten door in de chat `/frm http start` te typen. Hij luistert op poort 8080.
-3. **Borderless Fullscreen** (Randloos volledig scherm) als weergavemodus, anders kan de overlay niet over de game heen.
 
 ## Installeren
 
@@ -18,11 +17,23 @@ Een live dashboard, een fabriekskaart en een productieplanner voor **Satisfactor
 
 Je hebt geen beheerdersrechten nodig. Er staat een snelkoppeling op je bureaublad en in het Startmenu.
 
-## Gebruiken
+## Het dashboard: http://localhost:8420
 
-- **FICSIT Live start vanzelf als je inlogt** en wacht stil in het systeemvak (rechtsonder, bij de klok).
-- **Start je Satisfactory**, dan verschijnt de overlay vanzelf. Met **F9** toon en verberg je hem, en met **Shift+F9** klik je erdoorheen naar de game.
-- **Het dashboard** open je met de snelkoppeling op je bureaublad, of via het icoon in het systeemvak → **Dashboard openen**. Het adres is <http://localhost:8420/>.
+FICSIT Live is een pagina in je eigen browser, op **<http://localhost:8420/>**. Dat adres werkt alleen op de pc waar FICSIT Live draait. Het is geen website op internet.
+
+Je opent het dashboard op drie manieren:
+- dubbelklik op **FICSIT Live** op je bureaublad of in het Startmenu;
+- klik met rechts op het icoon in het systeemvak (rechtsonder, bij de klok) en kies **Dashboard openen**;
+- typ `localhost:8420` in de adresbalk van je browser. Zet het gerust bij je favorieten.
+
+Hier staan de energie, de machines, de kaart van je fabriek en de planner.
+
+## De overlay in de game
+
+- **FICSIT Live start vanzelf als je inlogt** en wacht stil in het systeemvak.
+- **Start je Satisfactory**, dan verschijnt de overlay vanzelf over de game. Dat werkt in *Volledig scherm* en in *Randloos venster*.
+- Met **F9** toon en verberg je hem, en met **Shift+F9** klik je erdoorheen naar de game.
+- Met de knop **In browser openen** bovenin de overlay open je hetzelfde dashboard groot in je browser.
 
 ## Bijwerken
 
@@ -32,7 +43,7 @@ Dat gaat vanzelf. FICSIT Live haalt een nieuwe versie op de achtergrond binnen e
 
 Je instellingen staan in `%APPDATA%\FICSIT Live`. Die map open je door dat pad in de adresbalk van Verkenner te plakken.
 
-- **De overlay** (sneltoetsen, grootte, kant, taal) stel je in in `overlay.config.json`. Wijzigingen werken meteen.
+- **De overlay** (sneltoetsen, breedte, kant, taal) stel je in in `overlay.config.json`. `"width": 0.95` betekent 95% van de schermbreedte. Wijzigingen werken meteen.
 - **Het dashboard op een tablet:** zet in `settings.json` de waarde `bridgeHost` op `"0.0.0.0"` en herstart FICSIT Live (systeemvak → **Afsluiten**, daarna de snelkoppeling). Windows vraagt dan één keer of het de firewall mag openen. Op de tablet ga je naar `http://<ip-van-je-pc>:8420/`.
 - **Niet automatisch bijwerken:** zet `checkForUpdates` op `false`. **Niet starten bij inloggen:** zet `openAtLogin` op `false`.
 
