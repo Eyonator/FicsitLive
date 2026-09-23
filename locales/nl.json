@@ -374,6 +374,7 @@
   "planner.canvas.addAll": "Alles erbij",
   "planner.canvas.arrange": "Schik",
   "planner.canvas.arrangeHint": "Zet ook de nodes die je hebt gesleept weer op hun plek",
+  "planner.canvas.resize": "Sleep om het tekenvel hoger of lager te maken",
   "planner.canvas.lockedHint": "Het recept {recipe} heb je nog niet ontgrendeld; het plan gebruikt het omdat het in dit project aan staat. Zo krijg je het: {how}. Zet het uit bij deze stap of op de pagina Recepten om het plan zonder te maken.",
   "planner.canvas.pinned": "vast",
   "planner.canvas.byproduct": "Bijproduct",

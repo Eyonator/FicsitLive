@@ -374,6 +374,7 @@
   "planner.canvas.addAll": "Add all",
   "planner.canvas.arrange": "Arrange",
   "planner.canvas.arrangeHint": "Put the nodes you dragged back in place as well",
+  "planner.canvas.resize": "Drag to make the canvas taller or shorter",
   "planner.canvas.lockedHint": "You have not unlocked the recipe {recipe} yet; the plan uses it because it is switched on in this project. How to get it: {how}. Switch it off at this step or on the Recipes page to plan without it.",
   "planner.canvas.pinned": "pinned",
   "planner.canvas.byproduct": "Byproduct",
