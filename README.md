@@ -191,3 +191,9 @@ Stuur die drie bestanden mee met je vraag of opmerking.
 In de releases staan het setup-bestand en de wijzigingen per versie. De vertalingen staan in [`locales/`](locales/). De broncode staat niet in deze repository.
 
 FICSIT Live is een onofficieel hulpproject voor Satisfactory en is niet verbonden aan Coffee Stain Studios. Satisfactory en de bijbehorende merken zijn van hun respectieve eigenaren.
+
+---
+
+<p align="center">
+  <a href="https://paypal.me/vinnies88"><img src="media/paypal-donation.png" alt="Support FICSIT Live via PayPal" width="360"></a>
+</p>
