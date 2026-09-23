@@ -1,6 +1,114 @@
+<p align="center">
+  <img src="media/ficsit-live-horizontal-dark.png" alt="FICSIT Live" width="600">
+</p>
+
+<p align="center">
+  <a href="#english">English</a> · <a href="#nederlands">Nederlands</a>
+</p>
+
+<a id="english"></a>
+
 # FICSIT Live
 
+A live dashboard, a factory map and a production planner for **Satisfactory 1.2**. Everything comes straight from your running game and shows up in your browser and as an overlay on top of the game.
+
+<p align="center">
+  <img src="media/github-social.png" alt="FICSIT Live: run the factory, see everything. Live dashboard, map, planner, overlay." width="100%">
+</p>
+
+**Languages:** English and Dutch. You can add your own, see [Languages](#languages).
+
+## What you need
+
+1. **Satisfactory 1.2** on Windows.
+2. **The FicsIt Remote Monitoring mod**, installed with the [Satisfactory Mod Manager](https://smm.ficsit.app/). Turn on **Web Autostart** in the mod settings, so its web server starts with the game. You can also start it yourself by typing `/frm http start` in the chat. It listens on port 8080.
+
+## Install
+
+1. **Download [FICSIT-Live-Setup.exe](https://github.com/Eyonator/FicsitLive/releases/latest/download/FICSIT-Live-Setup.exe)** (about 100 MB).
+   - If your browser asks whether to keep the file, choose **Keep**. In Edge that is under the three dots next to the download: **Keep → Show more → Keep anyway**.
+2. **Double-click the file.**
+   - The first time, Windows shows a blue window, *"Windows protected your PC"*. Click **More info**, then **Run anyway**. That is because the program has no paid certificate; it only happens on this first install.
+3. **Done.** FICSIT Live installs without further questions, then opens the dashboard in your browser.
+
+You do not need administrator rights. There is a shortcut on your desktop and in the Start menu.
+
+## The dashboard: http://localhost:8420
+
+FICSIT Live is a page in your own browser, at **<http://localhost:8420/>**. That address only works on the pc FICSIT Live runs on. It is not a website on the internet.
+
+Open the dashboard in one of three ways:
+- double-click **FICSIT Live** on your desktop or in the Start menu;
+- right-click the icon in the tray (bottom right, by the clock) and choose **Open the dashboard**;
+- type `localhost:8420` in your browser's address bar. Feel free to bookmark it.
+
+This is where you find power, machines, the map of your factory and the planner.
+
+## The overlay in the game
+
+- **FICSIT Live starts by itself when you sign in** and waits quietly in the tray.
+- **Start Satisfactory** and the overlay appears on top of the game by itself. That works in *Fullscreen* and in *Borderless window*.
+- **F9** shows and hides it, and **Shift+F9** lets your clicks through to the game.
+- The **Open in browser** button at the top of the overlay opens the same dashboard full size in your browser.
+
+## Updating
+
+FICSIT Live checks for a new version every half hour and downloads it in the background.
+
+- When one is ready, an **Update** button appears at the top of the dashboard and the overlay. Clicking it tells you what changes and how updating goes.
+- It is only installed once you click **Update now**. The tray icon offers the same.
+- The game may keep running. FICSIT Live is gone for about half a minute, starts again by itself, and the page reloads itself.
+- Your projects and settings stay. Updates bring no warning from Windows.
+
+## Settings
+
+Since version 0.4.21.0 the dashboard has a **Settings** page.
+
+- **The overlay:** hotkeys, width, height, side of the screen, opacity and the language of the tray menu. Changes take effect at once, even while the game runs. A tablet may change these too.
+- **The app:** starting at sign-in, looking for updates, whether a tablet may connect, and a folder with your own translations. These can only be changed on the pc itself. Who may connect and the translations folder need a short restart of the bridge; the page explains that first and asks you to confirm. The game and the overlay keep running.
+- **The dashboard on a tablet:** under **Reachable from**, choose *Also a tablet or another device on your network*. Windows asks once whether to open the firewall. On the tablet, go to `http://<your-pc's-ip>:8420/`.
+
+The settings live in `%APPDATA%\FICSIT Live` (`settings.json` and `overlay.config.json`). Editing them by hand still works, and shows up on the page.
+
+## Languages
+
+FICSIT Live speaks **English** and **Dutch**. Pick the language at the top right of the dashboard; the tray menu has its own setting on the Settings page.
+
+**Your own translation:**
+1. Copy [`locales/en.json`](locales/en.json) to a folder of your own and name the copy after your language code, for example `de.json`.
+2. Translate the values and leave the keys alone. `{words in braces}` are filled in by the app: keep them.
+3. On the **Settings** page, set **Folder with translations** to that folder and confirm the restart. Your language now appears in the language menu. Anything you have not translated yet shows in English.
+
+**Share it:** open a pull request in this repository that adds `locales/<code>.json`. See [`locales/README.md`](locales/README.md). An accepted translation ships with the next release.
+
+## Uninstalling
+
+Through **Windows Settings → Apps → Installed apps → FICSIT Live → Uninstall**. Your projects stay in `%APPDATA%\FICSIT Live` until you delete that folder yourself.
+
+## Something not working?
+
+Look in `%APPDATA%\FICSIT Live`:
+- `app.log` says what the app does;
+- `bridge.log` says what the connection with the game does;
+- `updater.log` says what the updates do.
+
+Send those three files along with your question or remark.
+
+## What is here
+
+The releases hold the installer and the changes per version. The translations live in [`locales/`](locales/). The source code is not in this repository.
+
+FICSIT Live is an unofficial companion project for Satisfactory and is not affiliated with Coffee Stain Studios. Satisfactory and related marks belong to their respective owners.
+
+---
+
+<a id="nederlands"></a>
+
+# FICSIT Live (Nederlands)
+
 Een live dashboard, een fabriekskaart en een productieplanner voor **Satisfactory 1.2**. Alles komt rechtstreeks uit je draaiende game en verschijnt in je browser en als overlay over de game.
+
+**Talen:** Engels en Nederlands. Je kunt er zelf een toevoegen, zie [Talen](#talen).
 
 ## Wat je nodig hebt
 
@@ -46,11 +154,24 @@ FICSIT Live kijkt elk half uur of er een nieuwe versie is en haalt die op de ach
 
 ## Instellingen
 
-Je instellingen staan in `%APPDATA%\FICSIT Live`. Die map open je door dat pad in de adresbalk van Verkenner te plakken.
+Sinds versie 0.4.21.0 heeft het dashboard een pagina **Instellingen**.
 
-- **De overlay** (sneltoetsen, breedte, kant, taal) stel je in in `overlay.config.json`. `"width": 0.95` betekent 95% van de schermbreedte. Wijzigingen werken meteen.
-- **Het dashboard op een tablet:** zet in `settings.json` de waarde `bridgeHost` op `"0.0.0.0"` en herstart FICSIT Live (systeemvak → **Afsluiten**, daarna de snelkoppeling). Windows vraagt dan één keer of het de firewall mag openen. Op de tablet ga je naar `http://<ip-van-je-pc>:8420/`.
-- **Niet automatisch bijwerken:** zet `checkForUpdates` op `false`. **Niet starten bij inloggen:** zet `openAtLogin` op `false`.
+- **De overlay:** sneltoetsen, breedte, hoogte, kant van het scherm, dekking en de taal van het systeemvak. Wijzigingen werken meteen, ook terwijl de game draait. Dit mag ook vanaf een tablet.
+- **De app:** starten bij het inloggen, zoeken naar updates, of een tablet verbinding mag maken, en een map met eigen vertalingen. Die kun je alleen op de pc zelf wijzigen. Wie verbinding mag maken en de map met vertalingen vragen een korte herstart van de bridge; de pagina legt dat eerst uit en vraagt je te bevestigen. De game en de overlay blijven draaien.
+- **Het dashboard op een tablet:** kies bij **Bereikbaar vanaf** voor *Ook een tablet of een ander apparaat in je netwerk*. Windows vraagt dan één keer of het de firewall mag openen. Op de tablet ga je naar `http://<ip-van-je-pc>:8420/`.
+
+De instellingen staan in `%APPDATA%\FICSIT Live` (`settings.json` en `overlay.config.json`). Met de hand aanpassen kan nog steeds, en dat zie je dan ook op de pagina.
+
+## Talen
+
+FICSIT Live spreekt **Engels** en **Nederlands**. De taal kies je rechtsboven in het dashboard; het systeemvak heeft een eigen instelling op de pagina Instellingen.
+
+**Een eigen vertaling:**
+1. Kopieer [`locales/en.json`](locales/en.json) naar een eigen map en noem de kopie naar de code van je taal, bijvoorbeeld `de.json`.
+2. Vertaal de waarden en laat de sleutels staan. `{woorden tussen accolades}` vult de app zelf in: laat ze staan.
+3. Zet op de pagina **Instellingen** de **Map met vertalingen** op die map en bevestig de herstart. Je taal staat nu in de taalkeuze. Wat je nog niet vertaald hebt, verschijnt in het Engels.
+
+**Delen:** open in deze repository een pull request dat `locales/<code>.json` toevoegt. Zie [`locales/README.md`](locales/README.md). Een aangenomen vertaling gaat mee met de volgende release.
 
 ## Verwijderen
 
@@ -67,4 +188,6 @@ Stuur die drie bestanden mee met je vraag of opmerking.
 
 ## Wat hier staat
 
-In de releases staan het setup-bestand en de wijzigingen per versie. De broncode staat niet in deze repository.
+In de releases staan het setup-bestand en de wijzigingen per versie. De vertalingen staan in [`locales/`](locales/). De broncode staat niet in deze repository.
+
+FICSIT Live is een onofficieel hulpproject voor Satisfactory en is niet verbonden aan Coffee Stain Studios. Satisfactory en de bijbehorende merken zijn van hun respectieve eigenaren.
