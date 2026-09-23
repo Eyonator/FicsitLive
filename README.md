@@ -37,7 +37,12 @@ Hier staan de energie, de machines, de kaart van je fabriek en de planner.
 
 ## Bijwerken
 
-Dat gaat vanzelf. FICSIT Live haalt een nieuwe versie op de achtergrond binnen en installeert die pas als de game dicht is, dus nooit tijdens het spelen. Zolang er een versie klaarstaat, zie je dat in het menu van het systeemvak-icoon. Je projecten en instellingen blijven staan. Bij updates komt er geen waarschuwing van Windows.
+FICSIT Live kijkt elk half uur of er een nieuwe versie is en haalt die op de achtergrond binnen.
+
+- Staat er een klaar, dan zie je bovenin het dashboard en in de overlay een knop **Update**. Een klik vertelt wat er verandert en hoe het bijwerken gaat.
+- Pas als jij op **Nu bijwerken** klikt, wordt hij geïnstalleerd. Dat kan ook via het icoon in het systeemvak.
+- De game mag gewoon blijven draaien. FICSIT Live is ongeveer een halve minuut weg, start daarna vanzelf opnieuw, en de pagina laadt zichzelf opnieuw.
+- Je projecten en instellingen blijven staan. Bij updates komt er geen waarschuwing van Windows.
 
 ## Instellingen
 
