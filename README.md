@@ -54,12 +54,13 @@ This is where you find power, machines, the map of your factory and the planner.
 
 ## Updating
 
-FICSIT Live checks for a new version every half hour and downloads it in the background.
+FICSIT Live checks for a new version every half hour and downloads it in the background. Don't want to wait? Click **Look for updates** at the bottom of the dashboard, next to the version number.
 
 - When one is ready, an **Update** button appears at the top of the dashboard and the overlay. Clicking it tells you what changes and how updating goes.
 - It is only installed once you click **Update now**. The tray icon offers the same.
 - The game may keep running. FICSIT Live is gone for about half a minute, starts again by itself, and the page reloads itself.
 - Your projects and settings stay. Updates bring no warning from Windows.
+- **Stable or Beta.** A new download is on **Stable**: you only get the big versions, such as 0.4 to 0.5. On **Beta** you get every version, the small ones in between too. You choose under **Settings**. Going back from Beta to Stable never puts an older version on your pc; you keep yours until a newer stable one is out.
 
 ## Settings
 
@@ -147,12 +148,13 @@ Hier staan de energie, de machines, de kaart van je fabriek en de planner.
 
 ## Bijwerken
 
-FICSIT Live kijkt elk half uur of er een nieuwe versie is en haalt die op de achtergrond binnen.
+FICSIT Live kijkt elk half uur of er een nieuwe versie is en haalt die op de achtergrond binnen. Niet willen wachten? Klik onderin het dashboard, naast het versienummer, op **Zoeken naar updates**.
 
 - Staat er een klaar, dan zie je bovenin het dashboard en in de overlay een knop **Update**. Een klik vertelt wat er verandert en hoe het bijwerken gaat.
 - Pas als jij op **Nu bijwerken** klikt, wordt hij geïnstalleerd. Dat kan ook via het icoon in het systeemvak.
 - De game mag gewoon blijven draaien. FICSIT Live is ongeveer een halve minuut weg, start daarna vanzelf opnieuw, en de pagina laadt zichzelf opnieuw.
 - Je projecten en instellingen blijven staan. Bij updates komt er geen waarschuwing van Windows.
+- **Stabiel of Beta.** Een nieuwe download staat op **Stabiel**: je krijgt alleen de grote versies, zoals 0.4 naar 0.5. Op **Beta** krijg je elke versie, ook de kleine tussendoor. Je kiest het bij **Instellingen**. Van Beta terug naar Stabiel zet nooit een oudere versie op je pc; je houdt de jouwe tot er een nieuwere stabiele is.
 
 ## Instellingen
 
