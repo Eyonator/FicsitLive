@@ -21,7 +21,8 @@ A live dashboard, a factory map and a production planner for **Satisfactory 1.2*
 ## What you need
 
 1. **Satisfactory 1.2** on Windows.
-2. **The FicsIt Remote Monitoring mod**, installed with the [Satisfactory Mod Manager](https://smm.ficsit.app/). Turn on **Web Autostart** in the mod settings, so its web server starts with the game. You can also start it yourself by typing `/frm http start` in the chat. It listens on port 8080.
+2. **The FicsIt Remote Monitoring mod**, installed with the [Satisfactory Mod Manager](https://smm.ficsit.app/).
+3. **Its web server switched on, in the game itself.** Start Satisfactory and go to **Options → FicsIt Remote Monitoring → Web/WebSockets**, and turn on **Autostart**. From then on the web server starts with the game. You only do this once. Rather not? Then type `/frm http start` in the in-game chat every time you play. It listens on port 8080.
 
 ## Install
 
@@ -113,7 +114,8 @@ Een live dashboard, een fabriekskaart en een productieplanner voor **Satisfactor
 ## Wat je nodig hebt
 
 1. **Satisfactory 1.2** op Windows.
-2. **De mod FicsIt Remote Monitoring**, te installeren via de [Satisfactory Mod Manager](https://smm.ficsit.app/). Zet in de modinstellingen **Web Autostart** aan, zodat de webserver met de game meestart. Je kunt hem ook zelf starten door in de chat `/frm http start` te typen. Hij luistert op poort 8080.
+2. **De mod FicsIt Remote Monitoring**, te installeren via de [Satisfactory Mod Manager](https://smm.ficsit.app/).
+3. **De webserver van die mod aan, in de game zelf.** Start Satisfactory, ga naar **Options → FicsIt Remote Monitoring → Web/WebSockets** en zet **Autostart** aan. Vanaf dan start de webserver met de game mee. Dat doe je één keer. Liever niet? Typ dan elke keer dat je speelt `/frm http start` in de chat van de game. Hij luistert op poort 8080.
 
 ## Installeren
 
