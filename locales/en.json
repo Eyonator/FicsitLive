@@ -460,7 +460,7 @@
   "planner.layout.label": "View",
   "planner.layout.canvas": "Canvas",
   "planner.layout.list": "List",
-  "planner.canvas.hint": "The canvas arranges itself: ingredients left of what they feed. Drag a node by its title to pin it; Arrange puts everything back in place. Drag the background to move around, zoom with the wheel. Open a node's ingredients to draw them in. You can type over any number on a node: it becomes a limit, and everything is worked out again. The label on a line is struck through and faded once the step that makes it is fully built; point at the label, the line or that node to see it clearly again.",
+  "planner.canvas.hint": "The canvas arranges itself: ingredients left of what they feed. Drag a node by its title to pin it; Arrange puts everything back in place. Drag the background to move around, zoom with the wheel. Open a node's ingredients to draw them in. You can type over any number on a node: it becomes a limit, and everything is worked out again. The label on a line is struck through and faded once the step that makes it is fully built; point at the label, the line or that node to see it clearly again. Where a node would cover the label, it slides along its line to the free spot nearest the middle.",
   "planner.canvas.lineLabel": "{amount} {item}",
   "planner.canvas.zoomIn": "Zoom in",
   "planner.canvas.zoomOut": "Zoom out",
